@@ -1,0 +1,53 @@
+.container {
+  width: calc(100vw + 200px);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-left: -27px;
+  background-color: #111111;
+
+  .columnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .centerImage {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+    }
+
+    .text {
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .centerButton {
+      display: flex;
+      justify-content: center;
+
+      .buttonContainer {
+        width: calc(100% - 25px);
+        cursor: pointer;
+        background: linear-gradient(#6A2DB1, #4711E3);
+        border-radius: 10px;
+        padding: 1px;
+
+        .button {
+          font-size: 14px;
+          text-align: center;
+          background: #111111;
+          border-radius: 10px;
+          padding: 10px 0px;
+          transition: 0.5s;
+
+          &:hover {
+            background: linear-gradient(#6A2DB1, #4711E3);
+          }
+        }
+      }
+    }
+  }
+}

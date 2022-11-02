@@ -1,0 +1,47 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String   @id @default(uuid())
+  name     String
+  email    String   @unique
+  password String
+  wallets  String[]
+  roles    Roles[]  @default([USER])
+  Asset    Asset[]
+}
+
+// Create a asset type that is related to User model
+
+model Asset {
+  id            String  @id @default(uuid())
+  name          String
+  address_id    String  @unique
+  image         String
+  qr_code       String
+  network       Network
+  expiration    String
+  user          User    @relation(fields: [userId], references: [id])
+  userId        String
+}
+
+enum Network {
+  ETHEREUM
+  POLYGON
+  ETHEREUM_GOERLI
+  POLYGON_MUMBAI
+}
+
+enum Roles {
+  ADMIN
+  USER
+}

@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "User" ALTER COLUMN "wallets" SET DEFAULT ARRAY[]::TEXT[];

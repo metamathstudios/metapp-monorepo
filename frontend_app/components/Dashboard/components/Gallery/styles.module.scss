@@ -1,0 +1,38 @@
+.container {
+  width: 100vw;
+  margin-left: 200px;
+  display: flex;
+  justify-content: center;
+
+  .columnContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+
+    .text {
+      text-align: center;
+      color: #515151;
+      margin-bottom: 20px;
+
+      :is(span) {
+        color: white;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .gridContainer {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+      justify-content: center;
+      width: 100%;
+      max-width: 1100px;
+      grid-template-areas: '1 2 3 4';
+      gap: 30px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  max-width: 25vw;
+  background-color: #FF7979;
+  border-radius: 5px;
+  margin-bottom: 5px;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    
+    .signal {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 10px;
+    }
+
+    .error {
+      width: 100%;
+      font-size: 10px;
+      color: #6B0000;
+    }
+  }
+}

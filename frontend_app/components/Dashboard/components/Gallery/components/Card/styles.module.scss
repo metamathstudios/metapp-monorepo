@@ -1,0 +1,79 @@
+.container {
+  width: 200px;
+  height: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #191919;
+  border-radius: 20px;
+  
+  .columnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+
+    .title {
+      text-align: center;
+      color: #B1B1B1;
+      text-overflow: clip;
+    }
+
+    .nftContainer {
+
+      .network {
+        position: absolute;
+        transform: translateY(-45px) translateX(120px);
+      }
+    }
+
+    .checkboxContainer {
+      cursor: pointer;
+      display: flex;
+      justify-content: center ;
+
+      .checkbox {
+        width: 55px;
+        background: linear-gradient(#6A2DB1, #4711E3);
+        padding: 1px;
+        border-radius: 50px;
+
+        .checkball {
+          background: #191919;
+          border-radius: 50px;
+
+          .imageContainer {
+            padding-top: 4px;
+            padding-left: 3px;
+            max-width: 22px;
+          }
+        }
+      }
+    }
+
+    .checkboxContainerActive {
+      cursor: pointer;
+      display: flex;
+      justify-content: center ;
+
+      .checkbox {
+        width: 55px;
+        background: linear-gradient(#20D11D, #4711E3);
+        padding: 1px;
+        border-radius: 50px;
+
+        .checkball {
+          background: #191919;
+          border-radius: 50px;
+
+          .imageContainer {
+            padding-top: 4px;
+            padding-left: 3px;
+            max-width: 22px;
+            transform: translateX(28px);
+          }
+        }
+      }
+    }
+  }
+}

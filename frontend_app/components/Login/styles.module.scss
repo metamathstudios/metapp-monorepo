@@ -1,0 +1,178 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--background);
+  background-image: url('./assets/background.svg');
+  background-size: cover;
+
+  .columnContainer {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+
+    .logoContainer {
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+      transition: 0.5s;
+
+      .centerContainer {
+        cursor: pointer;
+      }
+
+      &:hover {
+        filter: brightness(130%);
+      }
+    }
+
+    .formContainer {
+      display: flex;
+      flex-direction: column;
+
+      .emailContainer {
+        margin-bottom: 20px;
+
+        &:is(div) {
+          color: #515151;
+        }
+
+        .emailInput {
+          width: 100%;
+          padding: 8px 0px;
+          border: transparent;
+          background: transparent;
+          outline: transparent;
+        }
+
+        .line {
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(30deg, rgba(25, 25, 25, 0), rgba(25, 25, 25, 1), rgba(25, 25, 25, 1), rgba(25, 25, 25, 0));
+        }
+      }
+
+      .passwordContainer {
+        margin-bottom: 20px;
+        
+        &:is(div) {
+          color: #515151;
+        }
+
+        .row {
+          display: flex;
+          flex-direction: row;
+
+          .passwordInput {
+            width: 100%;
+            padding: 8px 0px;
+            border: transparent;
+            background: transparent;
+            outline: transparent;
+          }
+
+          .eyeContainer {
+            cursor: pointer;
+            margin-right: 10px;
+            transition: 0.5s;
+
+            &:hover {
+              filter: brightness(150%);
+            }
+          }
+        }
+
+        .line {
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(30deg, rgba(25, 25, 25, 0), rgba(25, 25, 25, 1), rgba(25, 25, 25, 1), rgba(25, 25, 25, 0));
+        }
+      }
+
+      .checkContainer {
+        display: flex;
+        flex-direction: row;
+        color: #515151;
+        margin-bottom: 40px;
+
+        .checkBoxContainer {
+          cursor: pointer;
+          transition: 0.5s;
+
+          &:hover {
+            filter: brightness(150%);
+          }
+        }
+
+        .text {
+          margin-left: 10px;
+        }
+      }
+
+      .buttonContainer {
+        cursor: pointer;
+        background: linear-gradient(rgba(106, 45, 177, 1), rgba(71, 17, 227, 1));
+        padding: 1px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+        .button {
+          text-align: center;
+          font-size: 18px;
+          background-color: var(--background);
+          padding: 14px 0px;
+          border-radius: 10px;
+          transition: 0.3s;
+
+          &:hover {
+            background: transparent;
+          }
+        }
+      }
+
+      .errorContainer {
+        cursor: pointer;
+        padding: 1px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+      }
+
+      .centerForgot {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        
+        .forgot {
+          color: #515151;
+
+          &:hover {
+            cursor: pointer;
+            color: white;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .registerContainer {
+        color: #515151;
+        text-align: center;
+
+        :is(span) {
+          color: white;
+
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

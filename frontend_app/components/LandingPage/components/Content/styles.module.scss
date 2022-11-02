@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 70vh;
+
+  .columnContainer {
+    width: 70vw;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .textContainer {
+      text-align: center;
+      padding: 0px 100px;
+      
+      .text2 {
+        margin-top: 40px;
+        padding: 0px 110px;
+      }
+    }
+
+    .ctasContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 70px;
+      gap: 80px;
+
+      .app {
+        cursor: pointer;
+        max-width: 200px;
+      }
+    }
+
+    .lineContainer {
+      height: 10vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .line {
+        width: 70vw;
+        height: 2px;
+        background-image: linear-gradient(to right, rgba(25, 25, 25, 0), rgba(25, 25, 25, 1), rgba(25, 25, 25, 1), rgba(25, 25, 25, 0));
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+
+# Secrets
+secrets.json
+.env
+
+# Folders
+node_modules
+build
+
+# Logs
+yarn.lock
+yarn-error.log

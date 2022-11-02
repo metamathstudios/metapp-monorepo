@@ -29,8 +29,8 @@ tasks:
       docker-compose up
 
   - name: Start API Server
+    before: cd backend
     init: |
-      cd backend
       gp sync-await "docker-up" && sleep 45s
       npx prisma migrate dev
       

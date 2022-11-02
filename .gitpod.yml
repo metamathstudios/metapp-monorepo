@@ -38,8 +38,6 @@ tasks:
       gp sync-await "docker-up" && sleep 5s
       npm run start:dev
 
-    openMode: split-right
-
 ports:
   - port: 8080
     visibility: public

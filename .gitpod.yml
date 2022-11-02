@@ -31,7 +31,7 @@ tasks:
   - name: Start API Server
     init: |
       cd backend
-      gp sync-await "docker-up" && sleep 30s
+      gp sync-await "docker-up" && sleep 45s
       npx prisma migrate dev
       
     command: |

@@ -43,8 +43,8 @@ tasks:
     before: cd frontend_app
     command: |
       gp sync-await "server-api-up"
+      gp url 3001 >> .env.template
       cp .env.template .env
-      gp url 3001 >> .env
       yarn && yarn run dev      
 
 ports:

@@ -8,9 +8,6 @@
   <!-- Title Placeholder -->
   <h3 align="center">MetAPP</h3>
   <p align="center">
-    <code>A project by MetaMath Studios</code>
-  </p>
-  <p align="center">
     MetAPP is an air-gapped service to securely authorize the use of NFTs without acting on a web3 wallet. MetAPP has a front-end to create ownership proofs and a public API that anyone can use to integrate into their projects and check these ownership proofs.
   </p>
 </p>

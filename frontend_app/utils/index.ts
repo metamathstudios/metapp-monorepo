@@ -35,6 +35,9 @@ export const login = async (email: string, password: string, baseURL: string): P
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'HEAD, GET, POST, PUT, PATCH, DELETE',
+            'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token'
         },
         data: data
     }

@@ -31,10 +31,12 @@ export class AssetsService {
 
   async deleteAsset(address: string, id: string) {
 
-
-    const auths = await this.usersService.prismaService.asset.findMany({
+    const auths = await this.usersService.prismaService.asset.deleteMany({
       where: { address_id: `${address}/${id}` },
+    }).then((res) => {
+      return { status: HttpStatus.OK, data: res }
+    }).catch((e) => {
+      return { status: HttpStatus.BAD_REQUEST, data: e }
     });
-    return { status: HttpStatus.OK, data: auths };
   }
 }
